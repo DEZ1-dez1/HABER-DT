@@ -1,41 +1,33 @@
-Türkiye Canlı Haber Takip Sistemi
-Modern, hızlı ve karanlık temalı bir RSS tabanlı haber takip uygulamasıdır.
-Türkiye’nin önde gelen haber kaynaklarından verileri gerçek zamanlı olarak çeker, otomatik olarak kategorilere ayırır ve görsellerle birlikte sunar.
-Özellikler
-Çoklu haber kaynağı desteği (TRT Haber, Hürriyet, Habertürk, Sözcü vb.)
-RSS içeriğindeki tüm alanların kullanımı (başlık, bağlantı, görsel, kategori)
-Akıllı anahtar kelime tabanlı kategori sistemi
-Koyu tema (dark mode)
-Otomatik yenileme ile canlı güncelleme
-Hata yakalama ve bağlantı uyarı sistemi
-Mobil uyumlu tasarım
+# 🚀 Türkiye Canlı Haber Takip Sistemi
 
-Proje Yapısı:
+Türkiye'nin önde gelen haber kaynaklarından (TRT Haber, Hürriyet, Habertürk, Sözcü vb.) gelen verileri **RSS** üzerinden anlık olarak çeken, akıllı kategorizasyon sistemine sahip modern bir haber platformu.
+
+![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Tech Stack](https://img.shields.io/badge/tech-VanillaJS%20%7C%20CSS3%20%7C%20HTML5-orange)
+![Live](https://img.shields.io/badge/status-live-brightgreen)
+
+## ✨ Öne Çıkan Özellikler
+
+* 🌐 **Çoklu Kaynak Desteği:** Tek bir panelden tüm ana akım medyayı takip edin.
+* 🧠 **Akıllı Kategori Sistemi:** Başlık ve içerik analizi yaparak haberleri otomatik olarak (Gündem, Spor, Ekonomi, Dünya, Teknoloji) sınıflandırır.
+* 🌙 **Modern Karanlık Tema:** Göz yormayan, premium hissi veren Dark Mode arayüzü.
+* 🔄 **Canlı Güncelleme:** Otomatik yenileme mekanizması ile hiçbir gelişmeyi kaçırmayın.
+* 📱 **Tam Mobil Uyumluluk:** Her cihazda kusursuz görüntüleme.
+* 🛡️ **Gelişmiş Hata Yönetimi:** Bağlantı kopmaları veya hatalı RSS verileri için güvenli çalışma katmanı.
+
+## 🛠️ Teknik Altyapı
+
+Uygulama, herhangi bir sunucu taraflı dile (PHP, Python vb.) ihtiyaç duymadan doğrudan tarayıcı üzerinde çalışır:
+
+* **Frontend:** HTML5, CSS3 (Modern Grid & Flexbox)
+* **Logic:** Vanilla JavaScript (ES6+)
+* **Veri:** RSS to JSON API entegrasyonu
+* **Sınıflandırma:** Türkçe karakter normalizasyonlu anahtar kelime algoritması
+
+## 📂 Proje Yapısı
+
+```text
 project/
-|-index.html
-|-style.css
-|-script.js
-
-Kullanılan Teknolojiler:
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-RSS to JSON API
-
-Kategori Sistemi:
-Uygulama RSS verilerinden gelen kategori alanlarını ve haber başlıklarını analiz eder.
-Türkçe karakter normalize edilir ve
-anahtar kelimeler ile
-Gündem
-Spor
-Ekonomi
-Dünya
-Teknoloji
-başlıkları altında otomatik sınıflandırma yapılır.
-
-Hata Yönetimi:
-İnternet bağlantısı yoksa uyarı gösterilir.
-RSS kaynağı cevap vermezse kullanıcı bilgilendirilir.
-Boş veri gelmesi durumunda sistem güvenli şekilde çalışmaya devam eder.
-
-Lisans: MIT License
+ ├─ index.html   # Ana yapı ve SEO optimizasyonu
+ ├─ style.css    # Dinamik karanlık tema ve responsive tasarım
+ └─ script.js    # RSS işleme, kategorizasyon ve API yönetimi
