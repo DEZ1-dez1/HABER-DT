@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HABER DT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Canlı Haber Akışı</h2>
+
+<select id="source">
+  <option value="https://www.trthaber.com/rss/sondakika.rss">TRT Haber</option>
+  <option value="https://www.hurriyet.com.tr/rss/gundem">Hürriyet</option>
+  <option value="https://www.haberturk.com/rss">Habertürk</option>
+  <option value="https://www.sozcu.com.tr/rss.xml">Sözcü</option>
+</select>
+
+<div class="tabs">
+  <button data-cat="all" class="active">Tümü</button>
+  <button data-cat="gundem">Gündem</button>
+  <button data-cat="spor">Spor</button>
+  <button data-cat="ekonomi">Ekonomi</button>
+  <button data-cat="dunya">Dünya</button>
+  <button data-cat="teknoloji">Teknoloji</button>
+</div>
+
+<div id="status"></div>
+<div id="alert" class="alert hidden"></div>
+<div id="news"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
